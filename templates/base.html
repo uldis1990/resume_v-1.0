@@ -70,7 +70,7 @@
             class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row" style="font-size: 1.3rem"
             data-te-navbar-nav-ref>
             <li>
-              <i class="fas fa-dragon"></i>
+              <a href='{{url_for("home_page")}}'><i class="fas fa-dragon"></i></a>
             </li>
             {% if session["user_id"] %}
             <li class="mb-2 lg:mb-0 lg:pr-2"  data-te-nav-item-ref>
@@ -249,13 +249,13 @@
 
             <a
               class="text-xl me-3 text-neutral-200 hover:text-neutral-400 focus:text-neutral-400 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-              href=""
+              href="{{url_for('register_page')}}"
               data-te-nav-link-ref
               >Register</a>
 
   <a
      class="text-xl me-3 text-neutral-200 hover:text-neutral-400 focus:text-neutral-400 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-     href=""
+     href="{{url_for('login_page')}}"
      data-te-nav-link-ref
      >Log in</a
      >
